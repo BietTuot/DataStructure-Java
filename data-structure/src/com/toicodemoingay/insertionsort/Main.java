@@ -6,6 +6,8 @@ public class Main {
 		
 		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 		
+		// First solution: while loop
+		
 		for (int i = 0; i <intArray.length; i++) {
 		
 			while(i > 0 && intArray[i] < intArray[i-1]) {
@@ -15,10 +17,23 @@ public class Main {
 			
 		}
 		
+		// Second solution: for loop
+		
+		/*
+		for (int firstUnsortedIndex = 0; firstUnsortedIndex <intArray.length; firstUnsortedIndex++) {
+			
+			for (int i = firstUnsortedIndex;i > 0; i--) {
+				if(intArray[i] < intArray[i-1]) {
+					swap(intArray, i, i-1);
+				}
+			}
+			
+		}
+		*/
+		
 		for (int i=0; i <intArray.length; i++ ) {
 			System.out.println(intArray[i]);
-		}	
-		
+		}
 
 	}
 	
